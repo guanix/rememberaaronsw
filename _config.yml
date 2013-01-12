@@ -1,0 +1,6 @@
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+exclude: ['Gemfile', 'Gemfile.lock']
+
+permalink:   none

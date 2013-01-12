@@ -1,0 +1,24 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0">
+
+  <channel>
+    <title>Remember Aaron Swartz</title>
+    <link>http://rememberaaronsw.com</link>
+    <description>Eulogy for Aaron Swartz</description>
+    <language>en-us</language>
+
+    {% for post in site.posts %}
+      <item>
+        <title>{{ post.title }}</title>
+        <link>http://rememberaaronsw.com{{ post.url }}</link>
+        <description>{{ post.content | xml_escape }}</description>
+        <guid>http://rememberaaronsw.com{{ post.id }}</guid>
+        <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+      </item>
+    {% endfor %}
+  </channel>
+
+</rss>

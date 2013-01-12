@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0">
+
+  <channel>
+    <title>Remember Aaron Swartz</title>
+    <link>http://rememberaaronsw.com</link>
+    <description>Eulogy for Aaron Swartz</description>
+    <language>en-us</language>
+
+    
+      <item>
+        <title>A test</title>
+        <link>http://rememberaaronsw.com/derek-hammer.html</link>
+        <description>&lt;p&gt;Test&lt;/p&gt;</description>
+        <guid>http://rememberaaronsw.com/derek-hammer</guid>
+        <pubDate>2013-01-12T00:00:00+00:00</pubDate>
+      </item>
+    
+  </channel>
+
+</rss>
