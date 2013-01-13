@@ -72,8 +72,8 @@ article.quote .content {
   margin-bottom: 36px;
 }
 
-#wrapper > header h1 { 
-  font-size: 40px; 
+#wrapper > header h1 {
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -147,6 +147,10 @@ article.quote .content {
 
 #memories footer .date {
   font-size: 0.8571em;
+}
+
+footer .back-link {
+  margin-bottom: 1em;
 }
 
 .clearfix { clear: both; }
