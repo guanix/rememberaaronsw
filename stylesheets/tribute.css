@@ -13,10 +13,15 @@ a {
   border-bottom: dotted #ccc thin;
 }
 
+img  {
+  max-width: 940px;
+}
+
 article {
   padding-top: 20px;
   position: relative;
 }
+
 
 article p {
   line-height: 28px;
@@ -173,11 +178,17 @@ footer .back-link {
   #wrapper {
     width: 660px;
   }
+  img  {
+    max-width: 660px;
+  }
 }
 
 @media (max-width: 659px) {
   #wrapper {
     width: 320px;
+  }
+  img  {
+    max-width: 320px;
   }
 
   #wrapper > header ul {
