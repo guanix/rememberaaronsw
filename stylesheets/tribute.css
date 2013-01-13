@@ -191,3 +191,10 @@ footer .back-link {
     margin: 5px 0;
   }
 }
+
+i.icon-reddit {
+  background: transparent url('/images/reddit-icon_normal.png') top left no-repeat;
+  background-size: 20px 20px;
+  height: 16px;
+  display: inline-block;
+}
