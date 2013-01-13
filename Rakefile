@@ -1,3 +1,4 @@
+desc 'Create a new memory'
 task :new, :type, :title do |t, args|
   args.with_defaults(type: "post", title: "a-memory")
   type, title = args[:type], args[:title]
@@ -21,6 +22,6 @@ To add a link:
 
 This is some text. [This is a link](http://aaronsw.com) to a site.
 POST
-  
+
   File.open(file, "w") { |f| f.write content }
 end

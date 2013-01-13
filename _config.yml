@@ -1,6 +1,6 @@
 source:      .
 destination: ./_site
 plugins:     ./_plugins
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
 
 permalink:   none

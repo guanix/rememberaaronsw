@@ -4,6 +4,14 @@
 
 Fork this repository, create a new post in memories (you can just copy an existing one), and send a pull request. When the pull request is accepted, the site will be updated with your memory in about 5 minutes.
 
+If you have rake installed, there is a rake task to create a new memory:
+
+`rake new[type,title]`
+
+| Name | Description | Default |
+| type | Memory type. Can be one of image, quote, or post. | post |
+| title | Title of the memory | a-memory |
+
 ## About
 
 Open source code for the Remember Aaron Swartz site.
