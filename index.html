@@ -1,11 +1,10 @@
 ---
-title: Celebrating Aaron Swartz
+title: Remember Aaron Swartz
 ---
 <!DOCTYPE html>
 <html>
   <head>
     <title>{{ page.title }}</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/stylesheets/reset.css" />
     <link rel="stylesheet" href="/stylesheets/tribute.css" />
     <link rel="stylesheet" href="/stylesheets/font-awesome.css"/>
@@ -21,6 +20,8 @@ title: Celebrating Aaron Swartz
     <meta property="og:url" content="http://www.rememberaaronsw.com"/>
     <meta property="og:site_name" content="Celebrating Aaron Swartz"/>
     <meta property="og:admins" content="1800517"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
 
   <body>
@@ -37,22 +38,35 @@ title: Celebrating Aaron Swartz
         </ul>
         <div class='clearfix'></div>
       </header>
-      <ul id='content'>
-        {% for post in site.posts %}
-          <li>
-            <article>
-              <header>
-                <h2><a href='{{ post.url }}'>{{ post.title }}</a></h2>
-                <span class='author'>{{ post.author }}</span>
-              </header>
-              <div>{{ post.content }}</div>
-              <footer>
-                <span class='date'>{{ post.date | date: "%d %b %Y" }}</span>
-              </footer>
-            </article>
-          </li>
-        {% endfor %}
-      </ul>
+
+      <div id='main'>
+        <ul id='statements'>
+          {% for post in site.categories.statements %}
+            <li>
+              <article>
+                <div>{{ post.content }}</div>
+              </article>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <ul id='memories'>
+          {% for post in site.categories.memories %}
+            <li>
+              <article>
+                <header>
+                  <h2><a href='{{ post.url }}'>{{ post.title }}</a></h2>
+                  <span class='author'>{{ post.author }}</span>
+                </header>
+                <div>{{ post.content }}</div>
+                <footer>
+                  <span class='date'>{{ post.date | date: "%d %b %Y" }}</span>
+                </footer>
+              </article>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
       <footer>
         <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
       </footer>

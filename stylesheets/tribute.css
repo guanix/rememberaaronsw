@@ -7,69 +7,115 @@ body {
   font-family: Georgia, serif;
   color: black;
 }
+
+article p {
+  line-height: 36px;
+  margin-top: 18px;
+}
+
+article em {
+  font-style: italic;
+}
+
 #wrapper {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
 }
+
 #wrapper > header {
   width: 100%;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 36px;
 }
-#wrapper > header h1 { font-size: 40px; font-weight: 700; }
+
+#wrapper > header h1 { 
+  font-size: 40px; 
+  font-weight: 700;
+}
+
 #wrapper > header ul {
   margin: 10px auto 0;
   list-style: none;
   width: 555px;
 }
+
 #wrapper > header ul li {
   float: left;
   margin-left: 10px;
 }
+
 #wrapper > header ul li a {
   color: #666;
   background-color: #ffc;
   text-decoration: none;
   border-bottom: dotted #ccc thin;
 }
+
 #wrapper > footer {
   font-size: 0.8571em;
   text-align: center;
   padding: 20px 0;
 }
-#content {
+
+#statements article {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 18px;
+}
+
+#statements article h2 {
+  font-size: 30px;
+}
+
+#statements article p {
+/*  font-size: 14px;
+  line-height: 28px;
+*/}
+
+#statements article hr {
+  border-top: 1px solid #888;
+  border-bottom: 0;
+}
+
+#memories {
   position: relative;
   width: 100%;
-  line-height: 36px;
 }
-#content header h2 {
+
+#memories header h2 {
   font-size: 1.1667em;
   line-height: 1.286em;
   margin: 1.929em 0 0.643em 0;
   font-weight:normal;
 }
+
 #wrapper header h2 a {
   color: black;
   text-decoration: none;
 }
-#content header .author {
+
+#memories header .author {
   font-size: 0.8571em;
   font-weight: 700;
 }
-#content img {
+
+#memories img {
   width: 300px;
 }
-#content li {
+
+#memories li {
   width: 312px;
   height: auto;
   box-sizing: border-box;
-  padding: 10px;
+  padding-right: 10px;
 }
-#content p {
+
+#memories p {
   margin: 5px 0;
 }
-#content footer .date {
+
+#memories footer .date {
   font-size: 0.8571em;
 }
 
@@ -85,11 +131,13 @@ body {
   #wrapper {
     width: 320px;
   }
+
   #wrapper > header ul {
     margin: 10px 0;
     list-style: none;
     width: 100%;
   }
+
   #wrapper > header ul li {
     float: none;
     margin: 5px 0;
