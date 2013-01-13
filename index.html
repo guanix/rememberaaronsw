@@ -55,8 +55,7 @@ title: Remember Aaron Swartz
       </header>
 
       <div id='main'>
-        <a href="#memories">Memories <i class="icon-double-angle-down"></i></a>
-        <ul id='statements'>
+        <ul id='memories'>
           {% for post in site.categories.statements %}
             <li>
               <article>
@@ -64,9 +63,6 @@ title: Remember Aaron Swartz
               </article>
             </li>
           {% endfor %}
-        </ul>
-
-        <ul id='memories'>
           {% for post in site.categories.memories %}
             <li>
               <article class="{{ post.type }}">
