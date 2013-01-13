@@ -1,0 +1,61 @@
+---
+title: Celebrating Aaron Swartz
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/reset.css" />
+    <link rel="stylesheet" href="/stylesheets/tribute.css" />
+    <link rel="stylesheet" href="/stylesheets/font-awesome.css"/>
+
+    <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js'></script>
+    <script src='/javascript/jquery.wookmark.js'></script>
+    <script src='/javascript/jquery.imagesloaded.js'></script>
+    <script src='/javascript/tribute.js'></script>
+
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://farm3.staticflickr.com/2552/3835494997_edc2e1dc12.jpg"/>
+    <meta property="og:url" content="http://www.rememberaaronsw.com"/>
+    <meta property="og:site_name" content="Celebrating Aaron Swartz"/>
+    <meta property="og:admins" content="1800517"/>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>{{ page.title }}</h1>
+        <ul>
+          <li><a href='http://aaronsw.com'>aaronsw.com</a></li>
+          <li><a href='http://rememberaaronsw.com/rss.xml'><i class="icon-rss"></i>rss</a></li>
+          <li><a target='_blank' href='http://www.facebook.com/sharer.php?u=http://rememberaaronsw.com&t=Remember%20Aaron%20Swartz'><i class="icon-facebook"></i>facebook</a></li>
+          <li><a target='_blank' href="https://twitter.com/share?text=Remember%20Aaron%20Swartz" class="twitter-share-button" data-lang="en"><i class="icon-twitter"></i>twitter</a></li>
+          <li><a target='_blank' href='http://www.reddit.com'><i class="icon-share"></i>reddit</a></li>
+          <li><a target='_blank' href='https://github.com/rememberaaronsw/rememberaaronsw'><i class="icon-github"></i>contribute</a></li>
+        </ul>
+        <div class='clearfix'></div>
+      </header>
+      <ul id='content'>
+        {% for post in site.posts %}
+          <li>
+            <article>
+              <header>
+                <h2><a href='{{ post.url }}'>{{ post.title }}</a></h2>
+                <span class='author'>{{ post.author }}</span>
+              </header>
+              <div>{{ post.content }}</div>
+              <footer>
+                <span class='date'>{{ post.date | date: "%d %b %Y" }}</span>
+              </footer>
+            </article>
+          </li>
+        {% endfor %}
+      </ul>
+      <footer>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+      </footer>
+    </div>
+  </body>
+</html>

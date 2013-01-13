@@ -1,6 +1,0 @@
----
-title: A test
----
-
-
-Test
