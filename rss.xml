@@ -1,7 +1,7 @@
 ---
 layout: nil
 ---
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0">
 
   <channel>
@@ -16,7 +16,7 @@ layout: nil
         <link>http://rememberaaronsw.com{{ post.url }}</link>
         <description>{{ post.content | xml_escape }}</description>
         <guid>http://rememberaaronsw.com{{ post.id }}</guid>
-        <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S Z" }}</pubDate>
       </item>
     {% endfor %}
   </channel>
