@@ -14,18 +14,7 @@ title: Remember Aaron Swartz
     <script src='/javascript/jquery.imagesloaded.js'></script>
     <script src='/javascript/tribute.js'></script>
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-37626640-1']);
-      _gaq.push(['_setDomainName', 'rememberaaronsw.com']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+    {% include analytics.html %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -43,14 +32,7 @@ title: Remember Aaron Swartz
     <div id="wrapper">
       <header>
         <h1>{{ page.title }}</h1>
-        <ul>
-          <li><a href='http://aaronsw.com'>aaronsw.com</a></li>
-          <li><a href='http://rememberaaronsw.com/rss.xml'><i class="icon-rss"></i>rss</a></li>
-          <li><a target='_blank' href='http://www.facebook.com/sharer.php?u=http://rememberaaronsw.com&t=Remember%20Aaron%20Swartz'><i class="icon-facebook"></i>facebook</a></li>
-          <li><a target='_blank' href="https://twitter.com/share?text=Remember%20Aaron%20Swartz" class="twitter-share-button" data-lang="en"><i class="icon-twitter"></i>twitter</a></li>
-          <li><a target='_blank' href='http://www.reddit.com'><i class="icon-share"></i>reddit</a></li>
-          <li><a target='_blank' href='https://github.com/rememberaaronsw/rememberaaronsw'><i class="icon-github"></i>contribute</a></li>
-        </ul>
+        {% include links.html %}
         <div class='clearfix'></div>
       </header>
 

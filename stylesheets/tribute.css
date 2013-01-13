@@ -32,6 +32,12 @@ article blockquote {
   margin-left: 10px;
 }
 
+article ul {
+  margin: 12px 0 0 20px;
+  list-style-type: circle;
+  line-height: 24px;
+}
+
 article.image header h2, article.quote header h2 {
   display: none;
 }
@@ -39,6 +45,15 @@ article.image header h2, article.quote header h2 {
 article.post p {
   font-size: 12px;
   line-height: 24px;
+}
+
+article.page {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+article.page ul {
+  line-height: 36px;
 }
 
 article i.quotemarker {
@@ -80,7 +95,6 @@ article.quote .content {
 #wrapper > header ul {
   margin: 10px auto 0;
   list-style: none;
-  width: 555px;
 }
 
 #wrapper > header ul li {
