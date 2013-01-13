@@ -1,11 +1,21 @@
 body {
   background-color: #ffd;
-  /* font-family: Lato, sans-serif; */
-  /* color: #333; */
   font-weight: 300;
   font-size: 14px;
   font-family: Georgia, serif;
   color: black;
+}
+
+a {
+  color: #666;
+  background-color: #ffc;
+  text-decoration: none;
+  border-bottom: dotted #ccc thin;
+}
+
+article {
+  padding-top: 20px;
+  position: relative;
 }
 
 article p {
@@ -20,6 +30,33 @@ article em {
 article blockquote {
   font-style: italic;
   margin-left: 10px;
+}
+
+article.image header h2, article.quote header h2 {
+  display: none;
+}
+
+article.post p {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+article i.quotemarker {
+  display: none;
+}
+
+article.quote i.quotemarker {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  color: #FFE180;
+  top: 20px;
+  left: 0;
+  font-size: 70px;
+}
+
+article.quote .content {
+  padding: 10px 0;
 }
 
 #wrapper {
@@ -52,10 +89,6 @@ article blockquote {
 }
 
 #wrapper > header ul li a {
-  color: #666;
-  background-color: #ffc;
-  text-decoration: none;
-  border-bottom: dotted #ccc thin;
   font-size: 18px;
   line-height: 36px;
 }

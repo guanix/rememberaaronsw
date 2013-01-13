@@ -55,34 +55,21 @@ title: Remember Aaron Swartz
         <ul id='memories'>
           {% for post in site.categories.memories %}
             <li>
-              {% if post.type == 'image' %}
-                <article>
-                  <div><a href="{{ post.link || '#' }}">{{ post.content }}</a></div>
-                  <footer>
-                    <a href="{{ post.link || '#' }}">{{ post.author }}</a>
-                    <span class='date'><a href='{{ post.url }}'>{{ post.date | date: "%d %b %Y" }}</a></span>
-                  </footer>
-                </article>
-              {% else if post.type == 'quote' %}
-                <article>
-                  <div>{{ post.content }}</div>
-                  <footer>
-                    <a href="{{ post.link || '#' }}">{{ post.author }}</a>
-                    <span class='date'><a href='{{ post.url }}'>{{ post.date | date: "%d %b %Y" }}</a></span>
-                  </footer>
-                </article>
-              {% else if post.type == 'post' %}
-                <article>
-                  <header>
-                    <h2><a href='{{ post.url }}'>{{ post.title }}</a></h2>
-                    <span class='author'>{{ post.author }}</span>
-                  </header>
-                  <div>{{ post.content }}</div>
-                  <footer>
-                    <span class='date'><a href='{{ post.url }}'>{{ post.date | date: "%d %b %Y" }}</a></span>
-                  </footer>
-                </article>
-              {% endif %}
+              <article class="{{ post.type }}">
+                <header>
+                  <h2><a href='{{ post.url }}'>{{ post.title }}</a></h2>
+                  <i class="quotemarker icon-quote-left"></i>
+                </header>
+                {% if post.type == 'image' %}
+                <div class="content"><a href="{{ post.link || '#' }}">{{ post.content }}</a></div>
+                {% else %}
+                <div class="content">{{ post.content }}</div>
+                {% endif %}
+                <footer>
+                  <a href="{{ post.link || '#' }}">{{ post.author }}</a>
+                  <span class='date'><a href='{{ post.url }}'>{{ post.date | date: "%d %b %Y" }}</a></span>
+                </footer>
+              </article>
             </li>
           {% endfor %}
         </ul>
