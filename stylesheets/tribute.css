@@ -100,8 +100,9 @@ article.quote .content {
 }
 
 #statements article {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 18px;
+  border-top: 1px solid #ccc;
+  margin-top: 18px;
+  padding-top: 0;
 }
 
 #statements article h2 {
@@ -109,13 +110,6 @@ article.quote .content {
 }
 
 #statements article p {
-/*  font-size: 14px;
-  line-height: 28px;
-*/}
-
-#statements article hr {
-  border-top: 1px solid #888;
-  border-bottom: 0;
 }
 
 #memories {
