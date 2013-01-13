@@ -1,0 +1,36 @@
+---
+main_title: Remember Aaron Swartz
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.main_title }}</title>
+    <link rel="stylesheet" href="/stylesheets/reset.css" />
+    <link rel="stylesheet" href="/stylesheets/tribute.css" />
+    <link rel="stylesheet" href="/stylesheets/font-awesome.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>{{ page.title }}</h1>
+        <ul>
+          <li><a href='http://aaronsw.com'>aaronsw.com</a></li>
+          <li><a href='http://rememberaaronsw.com/rss.xml'><i class="icon-rss"></i>rss</a></li>
+          <li><a target='_blank' href='http://www.facebook.com/sharer.php?u=http://rememberaaronsw.com&t=Remember%20Aaron%20Swartz'><i class="icon-facebook"></i>facebook</a></li>
+          <li><a target='_blank' href="https://twitter.com/share?text=Remember%20Aaron%20Swartz" class="twitter-share-button" data-lang="en"><i class="icon-twitter"></i>twitter</a></li>
+          <li><a target='_blank' href='http://www.reddit.com'><i class="icon-share"></i>reddit</a></li>
+          <li><a target='_blank' href='https://github.com/rememberaaronsw/rememberaaronsw'><i class="icon-github"></i>contribute</a></li>
+        </ul>
+        <div class='clearfix'></div>
+      </header>
+
+      <div id='main'>
+        {{ content }}
+      </div>
+    </div>
+  </body>
+</html>

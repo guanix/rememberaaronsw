@@ -60,7 +60,7 @@ title: Remember Aaron Swartz
                   <div><a href="{{ post.link || '#' }}">{{ post.content }}</a></div>
                   <footer>
                     <a href="{{ post.link || '#' }}">{{ post.author }}</a>
-                    <span class='date'>{{ post.date | date: "%d %b %Y" }}</span>
+                    <span class='date'><a href='{{ post.url }}'>{{ post.date | date: "%d %b %Y" }}</a></span>
                   </footer>
                 </article>
               {% else if post.type == 'quote' %}
@@ -68,8 +68,8 @@ title: Remember Aaron Swartz
                   <div>{{ post.content }}</div>
                   <footer>
                     <a href="{{ post.link || '#' }}">{{ post.author }}</a>
-                    <span class='date'>{{ post.date | date: "%d %b %Y" }}</span>
-                  </footer>                  
+                    <span class='date'><a href='{{ post.url }}'>{{ post.date | date: "%d %b %Y" }}</a></span>
+                  </footer>
                 </article>
               {% else if post.type == 'post' %}
                 <article>
@@ -79,7 +79,7 @@ title: Remember Aaron Swartz
                   </header>
                   <div>{{ post.content }}</div>
                   <footer>
-                    <span class='date'>{{ post.date | date: "%d %b %Y" }}</span>
+                    <span class='date'><a href='{{ post.url }}'>{{ post.date | date: "%d %b %Y" }}</a></span>
                   </footer>
                 </article>
               {% endif %}
