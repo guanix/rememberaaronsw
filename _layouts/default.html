@@ -49,7 +49,7 @@ main_title: Remember Aaron Swartz
             <i class="quotemarker icon-quote-left"></i>
           </header>
           {% if post.type == 'image' %}
-          <div class="content"><a href="{{ post.link || '#' }}">{{ post.content }}</a></div>
+          <div class="content"><a href="{{ post.link || '#' }}">{{ content }}</a></div>
           {% else %}
           <div class="content">{{ content }}</div>
           {% endif %}
