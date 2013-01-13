@@ -23,6 +23,14 @@ Open source code for the Remember Aaron Swartz site.
 
 Please use this site as a template for creating other rememberance sites. It is really easy to run (just add webserver) and we are actually just running in on Amazon S3. But any vanilla webserver would do a great job of hosting this site.
 
+## Ways to Help
+
+If you would like to help with this site, here are a few things that we haven't been able to get around to:
+
+* JavaScript-based form that creates a pull request on GitHub
+* Reddit up-and-down arrows
+* Facebook like / Twitter retweet
+
 ## Contributors
 
 Friends, family and loved ones of Aaron Swartz.
