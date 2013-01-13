@@ -8,9 +8,12 @@ If you have rake installed, there is a rake task to create a new memory:
 
 `rake new[type,title]`
 
-| Name | Description | Default |
-| type | Memory type. Can be one of image, quote, or post. | post |
-| title | Title of the memory | a-memory |
+<pre>
+| Name  | Description                                       | Default  |
++-------+---------------------------------------------------+----------+
+| type  | Memory type. Can be one of image, quote, or post. | post     |
+| title | Title of the memory                               | a-memory |
+</pre>
 
 ## About
 
