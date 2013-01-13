@@ -3,18 +3,23 @@ body {
   /* font-family: Lato, sans-serif; */
   /* color: #333; */
   font-weight: 300;
-  font-size: 18px;
+  font-size: 14px;
   font-family: Georgia, serif;
   color: black;
 }
 
 article p {
-  line-height: 36px;
-  margin-top: 18px;
+  line-height: 28px;
+  margin-top: 14px;
 }
 
 article em {
   font-style: italic;
+}
+
+article blockquote {
+  font-style: italic;
+  margin-left: 10px;
 }
 
 #wrapper {
@@ -51,6 +56,8 @@ article em {
   background-color: #ffc;
   text-decoration: none;
   border-bottom: dotted #ccc thin;
+  font-size: 18px;
+  line-height: 36px;
 }
 
 #wrapper > footer {
@@ -108,11 +115,7 @@ article em {
   width: 312px;
   height: auto;
   box-sizing: border-box;
-  padding-right: 10px;
-}
-
-#memories p {
-  margin: 5px 0;
+  padding-right: 20px;
 }
 
 #memories footer .date {
