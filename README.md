@@ -2,7 +2,7 @@
 
 ## How to Contribute
 
-Fork this repository, create a new post in memories (you can just copy an existing one), and send a pull request. When the pull request is accepted, the site will be updated with your memory is about 5 minutes.
+Fork this repository, create a new post in memories (you can just copy an existing one), and send a pull request. When the pull request is accepted, the site will be updated with your memory in about 5 minutes.
 
 ## About
 
