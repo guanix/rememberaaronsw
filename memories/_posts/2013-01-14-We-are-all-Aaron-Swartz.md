@@ -4,7 +4,6 @@ type: post
 date: 2013-01-14
 title: We are all Aaron Swartz
 layout: default
-link: <delete if unneeded>
 ---
 Hello,
 Rest in peace, Aaron, we miss you already.
@@ -14,5 +13,5 @@ Swartz »
 thank you
 Laurent Durand, France.
 
-![nous sommes tous aaron_swartz](/images/nous-sommes-tous-aaron_swartz.jpg)
+![nous sommes tous aaron_swartz](/images/nous-sommes-tous-aaron-swartz.jpg)
 
