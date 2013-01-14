@@ -1,8 +1,10 @@
 ---
-author: Stuart Bruce
+author: oscar vieira
 type: post
 date: 2013-01-14
-title: Aaron Swartz
+title: aaron swartz
 layout: default
 ---
-My deepest condolences to the family and friends of Aaron Swartz.  Such a brilliant mind and so young with so much more to give to this world – I’m sorry you had so much pain.  Rest in peace, you will not be forgotten! 
+Aaron, mis mayores respetos hacia tí, descansa en paz has cumplido plenamente tu misión. Y no te apenes, nos podrán matar a algunos pero no a todos, finalmente el bien prevalecerá.
+
+Buen viaje amigo.
