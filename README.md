@@ -6,13 +6,16 @@ Fork this repository, create a new post in memories (you can just copy an existi
 
 If you have rake installed, there is a rake task to create a new memory:
 
-`rake new[type,title]`
+`rake new[type,title,author]`
+
+note: please use '-' to connect words in title and author.
 
 <pre>
-| Name  | Description                                       | Default  |
-+-------+---------------------------------------------------+----------+
-| type  | Memory type. Can be one of image, quote, or post. | post     |
-| title | Title of the memory                               | a-memory |
+| Name   | Description                                        | Default            |
++--------+----------------------------------------------------+--------------------+
+| type   | Memory type. Can be one of image, quote, or post.  | post               |
+| title  | Title of the memory                                | a-memory           |
+| author | Author of the memory                               | family-and-friends |
 </pre>
 
 ## About
