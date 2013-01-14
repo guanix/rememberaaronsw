@@ -43,6 +43,11 @@ article ul {
   line-height: 24px;
 }
 
+article h3 {
+  margin-top: 18px;
+  border-bottom: 1px solid #ccc;
+}
+
 article.image header h2, article.quote header h2 {
   display: none;
 }

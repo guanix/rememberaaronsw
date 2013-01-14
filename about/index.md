@@ -25,3 +25,9 @@ like to add:
 If you'd like to contribute, please [fork the repo on Github](https://github.com/rememberaaronsw/rememberaaronsw)
 and get hacking. Alternatively, you can [email your memories](mailto:rememberaaronsw@gmail.com) to share
 them directly with Aaron's family and friends, who will work to shift them onto the website as quickly as possible.
+
+### Technical Details
+
+All content on this site is written in [Markdown](http://daringfireball.net/projects/markdown/), to which Aaron was a noted contributor.
+It's rendered to static HTML using [Jekyll](https://github.com/mojombo/jekyll), served using [Amazon S3](http://aws.amazon.com/s3/),
+and the content is, of course, syndicated using [RSS](http://en.wikipedia.org/wiki/RSS).
