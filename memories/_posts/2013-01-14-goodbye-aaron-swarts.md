@@ -1,5 +1,5 @@
 ---
-author: @_C1D
+author: _C1D
 type: post
 date: 2013-01-14
 title: Goodbye Aaron Swartz
