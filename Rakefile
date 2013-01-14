@@ -8,9 +8,9 @@ task :new, :type, :title do |t, args|
   content = <<-POST
 ---
 author: Family and friends of Aaron
-type: #{args[:title]}
+type: #{args[:type]}
 date: #{date}
-title: #{args[:type]}
+title: #{args[:title]}
 layout: default
 link: <delete if unneeded>
 ---
