@@ -66,15 +66,15 @@ main_title: Remember Aaron Swartz
           <footer>
             <a href="{{ post.link || '#' }}">{{ post.author }}</a>
             <div class='date'><a href='{{ post.url }}'>{{ post.date | date: "%d %b %Y" }}</a></div>
-            <div class="share-buttons">
-              <div class="fb-like" data-href="{{ post.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
-              <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
-            </div>
           </footer>
         </article>
       </div>
       <footer>
         <div class='back-link'><a href='/'>Back</a></div>
+        <div class="share-buttons">
+          <div class="fb-like" data-href="{{ post.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+        </div>
         <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
       </footer>
     </div>
