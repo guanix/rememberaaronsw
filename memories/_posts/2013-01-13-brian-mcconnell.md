@@ -1,6 +1,6 @@
 ---
 author: Brian McConnell, Worldwide Lexicon Project
-type: brian-mcconnell
+type: post
 date: 2013-01-13
 title: Brian McConnell
 layout: default
