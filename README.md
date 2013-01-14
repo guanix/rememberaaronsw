@@ -17,7 +17,7 @@ If you have rake installed, there is a rake task to create a new memory:
 
 ## About
 
-Open source code for the Remember Aaron Swartz site.
+Open source code for the [Remember Aaron Swartz site](http://www.rememberaaronsw.com/).
 
 ## Other Uses
 
