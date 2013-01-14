@@ -24,4 +24,5 @@ This is some text. [This is a link](http://aaronsw.com) to a site.
 POST
 
   File.open(file, "w") { |f| f.write content }
+  `open #{file}`
 end
