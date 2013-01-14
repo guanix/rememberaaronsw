@@ -173,6 +173,18 @@ article.quote .content {
   font-size: 0.8571em;
 }
 
+.share-buttons {
+  padding-top: 5px;
+}
+
+.share-buttons .twitter, .fb-like{
+    font-size: 1px;
+    display: inline-block;
+}
+div .fb_reset {
+    display: inline;
+} 
+
 footer .back-link {
   margin-bottom: 1em;
 }
