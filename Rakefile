@@ -10,7 +10,7 @@ task :new, [:type, :title] do |t, args|
 author: Family and friends of Aaron
 type: #{type}
 date: #{date}
-title: #{title}
+title: #{title.gsub('-',' ')}
 layout: default
 link: <delete if unneeded>
 ---
