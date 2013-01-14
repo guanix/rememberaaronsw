@@ -1,16 +1,16 @@
 desc 'Create a new memory'
-task :new, :type, :title do |t, args|
+task :new, [:type, :title] do |t, args|
   args.with_defaults(type: "post", title: "a-memory")
   type, title = args[:type], args[:title]
   date = Date.today.strftime("%Y-%m-%d")
-  filename = "#{date}-#{args[:title]}.md"
+  filename = "#{date}-#{title}.md"
   file = File.join("memories", "_posts", filename)
   content = <<-POST
 ---
 author: Family and friends of Aaron
-type: #{args[:type]}
+type: #{type}
 date: #{date}
-title: #{args[:title]}
+title: #{title}
 layout: default
 link: <delete if unneeded>
 ---
