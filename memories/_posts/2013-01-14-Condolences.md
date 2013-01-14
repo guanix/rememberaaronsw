@@ -1,11 +1,13 @@
 ---
-author: Eric Duran
+author: Alberto zani
 type: post
 date: 2013-01-14
-title: Condolences
+title: condolences
 layout: default
 ---
-My deepest heartfelt condolences to Aaron’s family and friends
-I never met Aaron Swartz, and never knew him personally, however i realized through news that Aaron Swartz was a kind of specie out of this world. Young, Brave, curious as every genius man must be, full of passion . Aaron, your bright light will be sorely missed in this world. A huge loss for the humanity,  peace be with your immediate family and friends.
+I did not know Aaron personally, but I feel so sad for his sudden
+and tragic 'missing' mostly as a human being, and secondarily 
+as a 'giant' of the fight for justice as the open access to scientific information on the Internet is concerned.
 
-Eric Duran.
+I believe he'll be missed and remembered forever all over the world.
+
