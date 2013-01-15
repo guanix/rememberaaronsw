@@ -118,6 +118,7 @@ article.quote .content {
 }
 
 #wrapper > footer {
+  clear: both;
   font-size: 0.8571em;
   text-align: center;
   padding: 20px 0;
@@ -136,12 +137,13 @@ article.quote .content {
 #statements article p {
 }
 
-#memories {
+ul.memories {
   position: relative;
-  width: 100%;
+  float: left;
+  width: 304px;
 }
 
-#memories header h2 {
+ul.memories header h2 {
   font-size: 1.1667em;
   line-height: 1.286em;
   margin: 1.929em 0 0.643em 0;
@@ -153,23 +155,23 @@ article.quote .content {
   text-decoration: none;
 }
 
-#memories header .author {
+ul.memories header .author {
   font-size: 0.8571em;
   font-weight: 700;
 }
 
-#memories img {
+ul.memories img {
   width: 300px;
 }
 
-#memories li {
+ul.memories li {
   width: 312px;
   height: auto;
   box-sizing: border-box;
   padding-right: 20px;
 }
 
-#memories footer .date {
+ul.memories footer .date {
   font-size: 0.8571em;
 }
 
@@ -226,3 +228,5 @@ i.icon-reddit {
   height: 16px;
   display: inline-block;
 }
+
+a[rel=next], a[rel=post] { display: none; }

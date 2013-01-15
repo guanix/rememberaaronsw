@@ -12,6 +12,7 @@ title: Remember Aaron Swartz
     <link rel="icon" type="image/png" href="/images/aaronsw-icon.png">
 
     <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js'></script>
+
     <script src='/javascript/jquery.wookmark.js'></script>
     <script src='/javascript/jquery.imagesloaded.js'></script>
     <script src='/javascript/tribute.js'></script>
@@ -47,7 +48,15 @@ title: Remember Aaron Swartz
       </header>
 
       <div id='main'>
-        <ul id='memories'>
+        <ul id="memory_links">
+          {% for post in paginator.posts %}
+            <li><a rel="post" href="{{ post.url }}"></a></li>
+          {% endfor %}
+          {% if paginator.next_page %}
+            <li><a rel="next" href="/page{{ paginator.next_page }}"></a></li>
+          {% endif %}
+        </ul>
+        <ul class='column memories'>
           {% for post in site.categories.statements %}
             <li>
               <article>
@@ -59,26 +68,9 @@ title: Remember Aaron Swartz
               </article>
             </li>
           {% endfor %}
-          {% for post in site.categories.memories %}
-            <li>
-              <article class="{{ post.type }}">
-                <header>
-                  <h2><a href='{{ post.url }}'>{{ post.title }}</a></h2>
-                  <i class="quotemarker icon-quote-left"></i>
-                </header>
-                {% if post.type == 'image' %}
-                <div class="content"><a href="{{ post.url }}">{{ post.content }}</a></div>
-                {% else %}
-                <div class="content">{{ post.content }}</div>
-                {% endif %}
-                <footer>
-                  <a href="{{ post.link || '#' }}">{{ post.author }}</a>
-                  <span class='date'><a href='{{ post.url }}'>{{ post.date | date: "%d %b %Y" }}</a></span>
-                </footer>
-              </article>
-            </li>
-          {% endfor %}
         </ul>
+        <ul class='column memories'></ul>
+        <ul class='column memories'></ul>
       </div>
       <footer>
         <div class="share-buttons">
