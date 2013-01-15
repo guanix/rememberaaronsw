@@ -59,8 +59,10 @@
       var title = $('.title').val();
       var body = $('.body').val();
       var todayDate = new Date();
-      var date = todayDate.getMonth() + '-' + todayDate.getDay() + '-' + todayDate.getYear();
-      var content = '---\nauthor: '+author+'\ntitle: "'+title+'"\ndate: '+date+'\ntype: post\nlayout: default\n---\n'+body;
+      var year = todayDate.getFullYear();
+      var day = todayDate.getDate();
+      var month= todayDate.getMonth()+1;
+      var content = '---\nauthor: '+author+'\ntitle: "'+title+'"\ndate: '+year+'-'+month+'-'+day+'\ntype: post\nlayout: default\n---\n'+body;
 
       var github = new Github({
         username: "rememberaaron",
@@ -68,7 +70,7 @@
         auth: "basic"
       });
       var repo = github.getRepo('rememberaaronsw', 'rememberaaronsw');
-      repo.writePullRequest({title: 'New Post', base: 'master'}, 'master', 'memories/_posts/'+filename, content, 'AutoPost', function(err) {
+      repo.writePullRequest({title: 'New Post', base: 'master'}, 'master', 'memories/_posts/'+year+'-'+month+'-'+day+'-'+filename+'.md', content, 'AutoPost', function(err) {
         if(err) {
           alert("Error!");
         } else {
