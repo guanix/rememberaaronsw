@@ -1,5 +1,5 @@
 ---
-author: Ajay Ohri
+author: Family and friends of Aaron
 type: post
 date: 2013-01-13
 title: A poem for Aaron
