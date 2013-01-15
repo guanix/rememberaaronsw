@@ -17,17 +17,17 @@
 
 ![Name File screenshot](https://raw.github.com/rememberaaronsw/rememberaaronsw/master/images/name-file-screenshot.png)
 
-- Fill in the body of the file using the following template (replace things inside <>s)
-<code>
+- Fill in the body of the file using the following template (replace things inside ()s)
+<pre>
     ---
-    author: <put the authors name here>
-    type: <choose from 'image' 'post' or 'quote'>
-    date: <the date for example: 2013-01-15>
-    title: <the title of the content> 
+    author: (put the authors name here)
+    type: (choose from 'image' 'post' or 'quote')
+    date: (the date for example: 2013-01-15)
+    title: (the title of the content) 
     layout: default
-    link: <delete if unneeded>
+    link: (delete if unneeded)
     ---
-    < 
+    ( 
     Put the body of the content here
     
     To add an image:
@@ -37,8 +37,8 @@
     To add a link:
     
     This is some text. [This is a link](http://aaronsw.com) to a site.
-    >
-</code>
+    )
+</pre>
 This file uses something called markdown - for detailed formatting help see [here](http://daringfireball.net/projects/markdown/)
 
 - click *Commit New File*
