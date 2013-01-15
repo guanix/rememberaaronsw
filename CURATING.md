@@ -11,11 +11,11 @@
 3. open [https://github.com/rememberaaronsw/rememberaaronsw/tree/master/memories/_posts](https://github.com/rememberaaronsw/rememberaaronsw/tree/master/memories/_posts) 
 4. Click on the + icon near the top to add a new file
 
-![Add File screenshot](/images/add-file-screenshot.png)
+![Add File screenshot](images/add-file-screenshot.png)
 
 5. Name the file according to the following template `YEAR-MONTH-DAY-TITLE.md`
 
-![Name File screenshot](/images/name-file-screenshot.png)
+![Name File screenshot](images/name-file-screenshot.png)
 
 6. Fill in the body of the file using the following template (replace things inside <>s)
   ---
