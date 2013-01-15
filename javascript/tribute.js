@@ -47,6 +47,10 @@
     })
 
     loadMore();
+    function resetForm($form) {
+      $form.find('input:text, input:password, textarea').val('');
+    }
+
 
     var createPost = function() {
       var password = $('.password').val();
@@ -64,7 +68,14 @@
         auth: "basic"
       });
       var repo = github.getRepo('rememberaaronsw', 'rememberaaronsw');
-      repo.writePullRequest({title: 'New Post', base: 'master'}, 'master', 'memories/_posts/'+filename, content, 'AutoPost', function(err) {});
+      repo.writePullRequest({title: 'New Post', base: 'master'}, 'master', 'memories/_posts/'+filename, content, 'AutoPost', function(err) {
+        if(err) {
+          alert("Error!");
+        } else {
+          alert("Posted!");
+          resetForm($('form'));
+        }
+      });
       return false;
     };
     $('.new-post').submit(createPost);
