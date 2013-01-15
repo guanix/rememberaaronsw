@@ -30,9 +30,8 @@ Please use this site as a template for creating other rememberance sites. It is 
 
 If you would like to help with this site, here are a few things that we haven't been able to get around to:
 
-* JavaScript-based form that creates a pull request on GitHub
-* Reddit up-and-down arrows
-* Facebook like / Twitter retweet
+* Prettyify the newpost form
+* Make the newpost form a self submission form using github oauth providers.
 
 ## Contributors
 
