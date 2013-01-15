@@ -4,6 +4,7 @@
         all  = $("a[rel=post]").map(function() { return $(this).attr("href"); });
         BOTTOM_DISTANCE_LOAD_THRESHOLD = 300;
 
+
     var bestColumn = function() {
       var best = null;
 
@@ -46,5 +47,26 @@
     })
 
     loadMore();
+
+    var createPost = function() {
+      var password = $('.password').val();
+      var filename = $('.filename').val();
+      var author = $('.author').val();
+      var title = $('.title').val();
+      var body = $('.body').val();
+      var todayDate = new Date();
+      var date = todayDate.getMonth() + '-' + todayDate.getDay() + '-' + todayDate.getYear();
+      var content = '---\nauthor: '+author+'\ntitle: "'+title+'"\ndate: '+date+'\ntype: post\nlayout: default\n---\n'+body;
+
+      var github = new Github({
+        username: "rememberaaron",
+        password: password,
+        auth: "basic"
+      });
+      var repo = github.getRepo('rememberaaronsw', 'rememberaaronsw');
+      repo.writePullRequest({title: 'New Post', base: 'master'}, 'master', 'memories/_posts/'+filename, content, 'AutoPost', function(err) {});
+      return false;
+    };
+    $('.new-post').submit(createPost);
   });
 })(jQuery);
