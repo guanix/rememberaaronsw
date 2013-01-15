@@ -5,6 +5,8 @@ date: 2013-01-13
 title: A poem for Aaron
 layout: default
 ---
+![Aaron at podium](/images/aaron-podium.jpg)
+
 This is about a boy called Aaron
 When fourteen he helped play a part
 In writing some of the code that makes the web start
