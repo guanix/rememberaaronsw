@@ -1,5 +1,5 @@
 ---
-author: _C1D
+author: C1D
 type: post
 date: 2013-01-14
 title: Goodbye Aaron Swartz
@@ -20,4 +20,4 @@ R.I.P Aaron Swartz, You may not have know it but you’ve changed the world!
 
 Yours Truly,
 
-@_C1D - Founder of myPin
+C1D - Founder of myPin

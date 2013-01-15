@@ -13,6 +13,6 @@ Aaron threw himself into so much so soon. He had to. He had no choice. I console
 
 Elliot Noss
 
-[this is a picture of a shirt we (Tucows) had made shortly after Aaron was arrested. we sold them online to raise a bit of money, but mostly they were a way of showing the absurdity of the prosecution/persecution]
+(This is a picture of a shirt we (Tucows) had made shortly after Aaron was arrested. we sold them online to raise a bit of money, but mostly they were a way of showing the absurdity of the prosecution/persecution.)
 
 ![Tucows Shirt](http://media.tumblr.com/b37eb02e3d63b227b6e0cec2f7e880b4/tumblr_inline_mgko9a3ldG1rdkuyi.jpg)
