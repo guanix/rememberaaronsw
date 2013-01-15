@@ -18,7 +18,7 @@
 ![Name File screenshot](https://raw.github.com/rememberaaronsw/rememberaaronsw/master/images/name-file-screenshot.png)
 
 - Fill in the body of the file using the following template (replace things inside <>s)
-<pre>
+<code>
     ---
     author: <put the authors name here>
     type: <choose from 'image' 'post' or 'quote'>
@@ -38,7 +38,7 @@
     
     This is some text. [This is a link](http://aaronsw.com) to a site.
     >
-</pre>
+</code>
 This file uses something called markdown - for detailed formatting help see [here](http://daringfireball.net/projects/markdown/)
 
 - click *Commit New File*
