@@ -24,7 +24,7 @@ Open source code for the [Remember Aaron Swartz site](http://www.rememberaaronsw
 
 ## Other Uses
 
-Please use this site as a template for creating other rememberance sites. It is really easy to run (just add webserver) and we are actually just running in on Amazon S3. But any vanilla webserver would do a great job of hosting this site.
+Please use this site as a template for creating other remembrance sites. It is really easy to run (just add webserver) and we are actually just running in on Amazon S3. But any vanilla webserver would do a great job of hosting this site.
 
 ## Ways to Help
 
