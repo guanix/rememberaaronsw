@@ -8,5 +8,5 @@ layout: default
 ---
 To add an image:
 
-![Aaron Reddit Angel](/images/Aaron Angel.jpg)
+![Aaron Reddit Angel](/images/Aaron%20Angel.jpg)
 

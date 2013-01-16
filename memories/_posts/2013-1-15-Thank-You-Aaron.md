@@ -1,7 +1,7 @@
 ---
 author: Vlad Dunaevsky
 title: "Thank You Aaron"
-date: 0-2-113
+date: 2013-1-15
 type: post
 layout: default
 ---

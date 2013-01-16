@@ -1,15 +1,15 @@
 ---
 author: Mei Zhao
 title: "A Condolence Note from China"
-date: 0-2-113
+date: 2013-1-15
 type: post
 layout: default
 ---
-I read about Aaron from the News in China. At that moment, I felt sad,  in fact, to better phrase it: a sort of overwhelmed sadness and loss. 
+I read about Aaron from the News in China. At that moment, I felt sad,  in fact, to better phrase it: a sort of overwhelmed sadness and loss.
 
 I admired Aaron's genius work for a very long time, yet until now I had no idea who he was. For a very long time, I merely benefits from his wonderful ideas. I only get to know him better when he left this world... I wish I could send him a note and tell him I thank him for all the great ideas and his courage!
 
-He promotes for freedom in the New Age. His ideas and advocation will never be forgotten for many years to come. 
+He promotes for freedom in the New Age. His ideas and advocation will never be forgotten for many years to come.
 
 I have posted this on 新浪微博, the Chinese version of Twitter, which is website flourished vigorously, not only because the interface is based on Chinese language, but also due to  the Internet censorship and regulation in the Mainland China.
 

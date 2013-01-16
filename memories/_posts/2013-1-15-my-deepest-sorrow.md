@@ -1,7 +1,7 @@
 ---
 author: Magali Sarfatti Larson
 title: "my deepest sorrow"
-date: 0-2-113
+date: 2013-1-15
 type: post
 layout: default
 ---
