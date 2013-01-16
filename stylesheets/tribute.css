@@ -94,7 +94,6 @@ article.quote .content {
   width: 100%;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 36px;
 }
 
 #wrapper > header h1 {
@@ -140,7 +139,8 @@ article.quote .content {
 ul.memories {
   position: relative;
   float: left;
-  width: 304px;
+  width: 290px;
+  margin-right: 20px;
 }
 
 ul.memories header h2 {
@@ -165,26 +165,27 @@ ul.memories img {
 }
 
 ul.memories li {
-  width: 312px;
+  width: 100%;
   height: auto;
   box-sizing: border-box;
-  padding-right: 20px;
 }
 
 ul.memories footer .date {
   font-size: 0.8571em;
 }
 
-.share-buttons {
-  padding-bottom: 5px;
+header .share-buttons {
+  clear: both;
+  padding: 10px 0;
 }
 
-.share-buttons .twitter, .fb-like{
-    font-size: 1px;
-    display: inline-block;
+header .share-buttons .twitter, header .share-buttons  .fb-like {
+  font-size: 1px;
+  display: inline-block;
 }
+
 div .fb_reset {
-    display: inline;
+  display: inline;
 } 
 
 footer .back-link {

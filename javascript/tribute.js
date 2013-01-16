@@ -42,7 +42,7 @@
     }
 
     $(document).scroll(function(evt, stuff) {
-      if (window.scrollY + window.innerHeight >= ( document.height - BOTTOM_DISTANCE_LOAD_THRESHOLD ))
+      if (window.scrollY + window.innerHeight >= ( $(document).height() - BOTTOM_DISTANCE_LOAD_THRESHOLD ))
         loadMore();
     })
 
