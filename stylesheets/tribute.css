@@ -224,7 +224,8 @@ footer .back-link {
 }
 
 i.icon-reddit {
-  background: transparent url('/images/reddit-icon_normal.png') top left no-repeat;
+  /*background: transparent url('/images/reddit-icon_normal.png') top left no-repeat;*/
+  background: transparent url('/images/redditAvatarAaronSw_01.png') top left no-repeat;
   background-size: 20px 20px;
   height: 16px;
   display: inline-block;
