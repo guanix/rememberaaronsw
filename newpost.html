@@ -16,15 +16,28 @@
     <script src='/javascript/underscore-min.js'></script>
     <script src='/javascript/github.js'></script>
     <script src='/javascript/tribute.js'></script>
+
   </head>
   <body>
-    <form class='new-post'>
-      Password: <input type='password' class='password' /><br />
-      Filename: <input class='filename' /><br />
-      Author: <input class='author' /><br />
-      Title: <input class='title' /><br />
-      Body: <textarea class='body'></textarea><br />
-      <input type='submit' />
+	<div id="post-wrap">  
+    <form class='new-post' action="#" method="post">
+      <h3>Contribute Memories of<br /> Aaron Swartz</h3>
+	
+      <label for='author'>Author</label>
+      <input class='author' placeholder='Your Name' />
+      
+      <label for='title'>Title</label>
+      <input class='title' placeholder='The Subject of Your Message' />
+      
+      <label for='message'>Message</label>
+      <textarea class='message' placeholder='Type in the content of your message here.'></textarea>
+            
+      <label for='upload'>Upload Image</lable>
+      <input type="file" name="pic" class="button" accept="image/*" placeholder='Choose A File From Your Computer (optional)'>
+      
+      <input type='submit' class='button' id="submit" value='Send Message' />
+      <img id="daisy" src="images/daisy.png" />
     </form>
+	</div>
   </body>
 </html>
