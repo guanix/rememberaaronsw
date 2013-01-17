@@ -8,7 +8,6 @@ body {
 
 a {
   color: #666;
-  background-color: #ffc;
   text-decoration: none;
   border-bottom: dotted #ccc thin;
 }
@@ -18,7 +17,8 @@ img  {
 }
 
 article {
-  padding-top: 20px;
+  padding: 20px 10px 10px 10px;
+  margin-top: 10px;
   position: relative;
 }
 
@@ -30,6 +30,10 @@ article p {
 
 article em {
   font-style: italic;
+}
+
+article strong {
+  font-weight: bold;
 }
 
 article blockquote {
@@ -78,6 +82,10 @@ article.quote i.quotemarker {
   top: 20px;
   left: 0;
   font-size: 70px;
+}
+
+article.statement {
+  background-color: #F7E3B7;
 }
 
 article.quote .content {
@@ -146,7 +154,7 @@ ul.memories {
 ul.memories header h2 {
   font-size: 1.1667em;
   line-height: 1.286em;
-  margin: 1.929em 0 0.643em 0;
+  margin: 0 0 0.643em 0;
   font-weight:normal;
 }
 

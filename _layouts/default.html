@@ -53,6 +53,7 @@ main_title: Remember Aaron Swartz
       {% assign post = page %}
 
       <div id='main'>
+        <a href="/"><i class="icon-double-angle-left"></i> Home</a>
         <article class="{{ post.type }}">
           <header>
             <h2><a href='{{ post.url }}'>{{ post.title }}</a></h2>
@@ -64,7 +65,7 @@ main_title: Remember Aaron Swartz
           <div class="content">{{ content }}</div>
           {% endif %}
           <footer>
-            <a href="{{ post.link || '#' }}">{{ post.author }}</a>
+            <a href="{{ post.link || post.url || '#' }}">{{ post.author }}</a>
             <div class='date'><a href='{{ post.url }}'>{{ post.date | date: "%d %b %Y" }}</a></div>
           </footer>
         </article>

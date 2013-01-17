@@ -52,11 +52,14 @@ title: Remember Aaron Swartz
           <div class="fb-like" data-href="http://www.rememberaaronsw.com/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
           <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
         </div>
-        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />In memory of Aaron, this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 License</a>.
-        <br/><a href="http://creativecommons.org/weblog/entry/36298">Learn more about Aaron's work with Creative Commons</a>.
+        <div class="license" style="width: 600px; margin-left: auto; margin-right: auto; text-align: left">
+          <a rel="license" style="float: left; padding-right: 10px" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
+          In memory of Aaron, this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 License</a>.
+          <a href="http://creativecommons.org/weblog/entry/36298">Learn more about Aaron's work with Creative Commons</a>.
+        </div>
       </header>
 
-      <div id='main'>
+      <div id='main' style="clear: both;">
         <ul id="memory_links">
           {% for post in paginator.posts %}
             <li><a rel="post" href="{{ post.url }}"></a></li>
@@ -68,7 +71,7 @@ title: Remember Aaron Swartz
         <ul class='column memories'>
           {% for post in site.categories.statements %}
             <li>
-              <article>
+              <article class="statement">
                 <header><h2>{{ post.title }}</h2></header>
                 <div>{{ post.content }}</div>
                 <footer>
