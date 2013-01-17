@@ -48,7 +48,7 @@
 
     loadMore();
     function resetForm($form) {
-      $form.find('input:text, input:password, textarea').val('');
+      $form.find('input:text, textarea').val('');
     }
 
 
