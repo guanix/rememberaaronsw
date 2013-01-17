@@ -19,11 +19,18 @@
   </head>
   <body>
     <form class='new-post'>
-      Password: <input type='password' class='password' /><br />
-      Filename: <input class='filename' /><br />
-      Author: <input class='author' /><br />
-      Title: <input class='title' /><br />
-      Body: <textarea class='body'></textarea><br />
+      <label for='password'>Password:</label>
+      <input name='password' type='password' class='password' />
+      <p>This is the password for the rememberaaron Github account.</p>
+      <label for='filename'>Filename:</label>
+      <input type='text' name='filename' class='filename' />
+      <p>This is a dash-separated-name. You do not need to put the date or the file extension (.md).</p>
+      <label for='author'>Author:</label>
+      <input type='text' name='author' class='author' />
+      <label for='title'>Title:</label>
+      <input type='text' name='title' class='title' />
+      <label for='body'>Body:</label>
+      <textarea name='body' class='body'></textarea>
       <input type='submit' />
     </form>
   </body>

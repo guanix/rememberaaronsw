@@ -186,10 +186,44 @@ header .share-buttons .twitter, header .share-buttons  .fb-like {
 
 div .fb_reset {
   display: inline;
-} 
+}
 
 footer .back-link {
   margin-bottom: 1em;
+}
+
+.new-post {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  letter-spacing: -.25em;
+}
+
+.new-post input[type='text'], .new-post input[type=password], .new-post textarea {
+  width: 300px;
+  display: inline-block;
+  box-sizing: border-box;
+  letter-spacing: normal;
+}
+
+.new-post textarea {
+  height: 300px;
+}
+
+.new-post label {
+  width: 100px;
+  display: inline-block;
+  box-sizing: border-box;
+  letter-spacing: normal;
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+
+.new-post p {
+  font-size: 10px;
+  padding-left: 100px;
+  letter-spacing: normal;
+  padding-bottom: 10px;
 }
 
 .clearfix { clear: both; }
