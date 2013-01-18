@@ -294,18 +294,18 @@ a[rel=next], a[rel=post] { display: none; }
 	  box-shadow: 0px 1px 0px rgba(255, 255, 255, .5);
 	  text-shadow: 1px 1px 0px #666666;
 	  border: solid #666 1px;
-	  background: -webkit-gradient(linear, 0 0, 0 100%, from(#adba77), to(#6f9438));
-	  background: -moz-linear-gradient(top, #adba77, #6f9438);
-	  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#adba77, endColorStr=#6f9438);
-	  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#adba77, endColorStr=#6f9438);
+	  background: -webkit-gradient(linear, 0 0, 0 100%, from(#92a95b), to(#6f9438));
+	  background: -moz-linear-gradient(top, #92a95b, #6f9438);
+	  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#92a95b, endColorStr=#6f9438);
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#92a95b, endColorStr=#6f9438);
 	  display: block; /* IE is so silly */
 	  cursor: pointer;
 	}
     #post-wrap .new-post .button#submit:hover {
-      background: -webkit-gradient(linear, 0 0, 0 100%, from(#628036), to(#919e59));
-      background: -moz-linear-gradient(top, #628036, #919e59)
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#adba77, endColorstr=#6f9438);
-    
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#91b168), to(#6f9438));
+	  background: -moz-linear-gradient(top, #91b168, #6f9438);
+	  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#91b168, endColorStr=#6f9438);
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#91b168, endColorStr=#6f9438);
     }
     #post-wrap .new-post #daisy {
       position:absolute;
