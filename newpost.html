@@ -16,28 +16,32 @@
     <script src='/javascript/underscore-min.js'></script>
     <script src='/javascript/github.js'></script>
     <script src='/javascript/tribute.js'></script>
-
   </head>
   <body>
-	<div id="post-wrap">  
-    <form class='new-post' action="#" method="post">
-      <h3>Contribute Memories of<br /> Aaron Swartz</h3>
-	
-      <label for='author'>Author</label>
-      <input class='author' placeholder='Your Name' />
+    <div id="post-wrap">
+    <form class='new-post'>
+      <h3>Add A Memory</h3>
       
-      <label for='title'>Title</label>
-      <input class='title' placeholder='The Subject of Your Message' />
+      <label for='password' placeholder="">Password:</label>
+      <input name='password' type='password' class='password' />
+      <p class="annotation">This is the password for the rememberaaron Github account.</p>
       
-      <label for='message'>Message</label>
-      <textarea class='message' placeholder='Type in the content of your message here.'></textarea>
-            
-      <label for='upload'>Upload Image</lable>
-      <input type="file" name="pic" class="button" accept="image/*" placeholder='Choose A File From Your Computer (optional)'>
+      <label for='filename'>Filename:</label>
+      <input type='text' name='filename' class='filename' placeholder="dash-separated-name" />
+      <p class="annotation">This is a dash-separated-name. You do not need to put the date or the file extension (.md).</p>
       
-      <input type='submit' class='button' id="submit" value='Send Message' />
-      <img id="daisy" src="images/daisy.png" />
+      <label for='author'>Author:</label>
+      <input type='text' name='author' class='author' placeholder="Author Name" />
+      
+      <label for='title'>Title:</label>
+      <input type='text' name='title' class='title' placeholder="The Subject of The Message" />
+      
+      <label for='body'>Body:</label>
+      <textarea name='body' class='body' placeholder="Write the message here, markdown syntax allowed."></textarea>
+      
+      <input type='submit' class="button submit" value="Send Message"/>
+      <img src="images/daisy.png" id="daisy" />
     </form>
-	</div>
+    </div>
   </body>
 </html>
