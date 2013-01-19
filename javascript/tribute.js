@@ -50,42 +50,10 @@
     function resetForm($form) {
       $form.find('input:text, textarea').val('');
     }
-    var GithubCredentials = {};
 
-    function getQueryVariable(variable) {
-      var query = window.location.search.substring(1);
-      var vars = query.split('&');
-      for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split('=');
-        if (decodeURIComponent(pair[0]) == variable) {
-          return decodeURIComponent(pair[1]);
-        }
-      }
-    }
-
-    var authorizeGithub = function() {
-      var code = getQueryVariable('code');
-      if(code) {
-        $('.github-login').css({'display': 'none'});
-        $('form').css({'display': 'block'});
-        $.ajax({
-          type: 'POST',
-          url: 'https://github.com/login/oauth/access_token',
-          data: JSON.stringify({
-            client_id: '74264a1d40eb1333b753',
-            client_secret: 'a8a6dd00741f7c69e8990435cde2caf82d4eb20c',
-            code: code
-          }),
-          success: function(dataString) {
-            var data = JSON.parse(dataString);
-            GithubCredentials.token = data.access_token;
-          }
-        });
-      }
-    }
-    window.authorizeGithub = authorizeGithub;
 
     var createPost = function() {
+      var password = $('.password').val();
       var filename = $('.filename').val();
       var author = $('.author').val();
       var title = $('.title').val();
@@ -97,8 +65,9 @@
       var content = '---\nauthor: '+author+'\ntitle: "'+title+'"\ndate: '+year+'-'+month+'-'+day+'\ntype: post\nlayout: default\n---\n'+body;
 
       var github = new Github({
-        token: GithubCredentials.token,
-        auth: "oauth"
+        username: "rememberaaron",
+        password: password,
+        auth: "basic"
       });
       var repo = github.getRepo('rememberaaronsw', 'rememberaaronsw');
       repo.writePullRequest({title: 'New Post', base: 'master'}, 'master', 'memories/_posts/'+year+'-'+month+'-'+day+'-'+filename+'.md', content, 'AutoPost', function(err) {
