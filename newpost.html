@@ -18,30 +18,30 @@
     <script src='/javascript/tribute.js'></script>
   </head>
   <body>
-    <div id="post-wrap">
-    <form class='new-post'>
-      <h3>Add A Memory</h3>
-
-      <label for='password' placeholder="">Password:</label>
-      <input name='password' type='password' class='password' />
-      <p class="annotation">This is the password for the rememberaaron Github account.</p>
-
-      <label for='filename'>Filename:</label>
-      <input type='text' name='filename' class='filename' placeholder="dash-separated-name" />
-      <p class="annotation">This is a dash-separated-name. You do not need to put the date or the file extension (.md).</p>
-
-      <label for='author'>Author:</label>
-      <input type='text' name='author' class='author' placeholder="Author Name" />
-
-      <label for='title'>Title:</label>
-      <input type='text' name='title' class='title' placeholder="The Subject of The Message" />
-
-      <label for='body'>Body:</label>
-      <textarea name='body' class='body' placeholder="Write the message here, markdown syntax allowed."></textarea>
-
-      <input type='submit' class="button submit" value="Send Message"/>
-      <img src="images/daisy.png" id="daisy" />
-    </form>
+    <div class='github-login'>
+      <a href='https://github.com/login/oauth/authorize?client_id=74264a1d40eb1333b753&redirect_uri=http://www.rememberaaronsw.com/newpost.html'>Login With <i class='icon-github'></i> Github</a>
     </div>
+    <div id="post-wrap">
+      <form class='new-post' style='display: none'>
+        <h3>Add A Memory</h3>
+
+        <label for='filename'>Filename:</label>
+        <input type='text' name='filename' class='filename' placeholder="dash-separated-name" />
+        <p class="annotation">This is a dash-separated-name. You do not need to put the date or the file extension (.md).</p>
+
+        <label for='author'>Author:</label>
+        <input type='text' name='author' class='author' placeholder="Author Name" />
+
+        <label for='title'>Title:</label>
+        <input type='text' name='title' class='title' placeholder="The Subject of The Message" />
+
+        <label for='body'>Body:</label>
+        <textarea name='body' class='body' placeholder="Write the message here, markdown syntax allowed."></textarea>
+
+        <input type='submit' class="button submit" value="Send Message"/>
+        <img src="images/daisy.png" id="daisy" />
+      </form>
+    </div>
+    <script>$(document).ready(function() {authorizeGithub();});</script>
   </body>
 </html>
