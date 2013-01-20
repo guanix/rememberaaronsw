@@ -343,3 +343,19 @@ a[rel=next], a[rel=post] { display: none; }
   left: 85%;
   margin-top: -22px;
 }
+
+.video {
+  width: 640px;
+  margin: 30px auto;
+}
+
+.video h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.video h3 {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 20px;
+}
