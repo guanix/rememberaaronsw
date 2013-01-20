@@ -359,3 +359,8 @@ a[rel=next], a[rel=post] { display: none; }
   text-align: center;
   padding-bottom: 20px;
 }
+
+.video p {
+  text-align: center;
+  margin: 10px 0;
+}
