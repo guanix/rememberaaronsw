@@ -6,5 +6,5 @@ title: sf memorial
 layout: default
 ---
 <div class='video'>
-  <iframe width="640" height="385" src="http://cdn.livestream.com/embed/oreillyradar?layout=4&amp;color=0xe7e7e7&amp;autoPlay=false&amp;mute=false&amp;iconColorOver=0x888888&amp;iconColor=0x777777&amp;allowchat=true&amp;height=385&amp;width=640" style="border:0;outline:0" frameborder="0" scrolling="no"></iframe>
+  <iframe width="300" height="200" src="http://cdn.livestream.com/embed/oreillyradar?layout=4&amp;color=0xe7e7e7&amp;autoPlay=false&amp;mute=false&amp;iconColorOver=0x888888&amp;iconColor=0x777777&amp;allowchat=true&amp;height=385&amp;width=640" style="border:0;outline:0" frameborder="0" scrolling="no"></iframe>
 </div>
